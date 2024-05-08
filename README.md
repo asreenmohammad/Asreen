@@ -1,5 +1,7 @@
 ## pic
 
+## HISTOGRAM
+
 This code is a Python script that utilizes the OpenCV (Open Source Computer Vision) library and Matplotlib to read an image, calculate the histogram of pixel intensities, and then plot the histogram.
 
 ## Importing Libraries:
@@ -24,6 +26,10 @@ plt.show()
 
 
 ## carty
+
+## BOUNDING BOX
+
+
 This code processes images and their associated bounding box information from a CSV file. Let's break down the code step by step
 ## Imports
 import os
@@ -79,6 +85,8 @@ output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
     
 ## rough
 
+## PRINTING NUMDERS
+
 This code calculates the running sum of numbers in the num list and prints each step of the calculation along with the current number, the previous number, and their sum.
 input
 
@@ -96,7 +104,7 @@ previousNum = i
     This line updates the value of previousNum to the current number i for the next iteration of the loop.
     However, there's an issue with this code. It's incorrectly updating previousNum with the current value of i in each iteration, effectively resetting it to the current number rather than accumulating the sum. To fix this and correctly calculate the running sum, you should add i to previousNum in each iteration:
     
- ```   
+   
 ## output
 
 Current Number 0Previous Number 0is 0
@@ -124,6 +132,8 @@ Current Number 9Previous Number 8is 17
 
 
 ## video
+
+## VIDEO
 
 This code is a simple example of using OpenCV to capture video from a webcam and display it in a window.
 
