@@ -127,7 +127,6 @@ Current Number 8Previous Number 7is 15
 
 Current Number 9Previous Number 8is 17
 
-```
 
 
 
