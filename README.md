@@ -17,7 +17,7 @@ histr = cv2.calcHist([img],[0],None,[256],[0,256])
 plt.plot(histr) 
 plt.show() 
    ```
-## carty.py
+## carty
 ```
 
 import os
