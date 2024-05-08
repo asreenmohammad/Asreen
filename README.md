@@ -41,6 +41,8 @@ from PIL import Image, ImageDraw
 ## Setting up File Paths:
 csv_file = "/home/asreen-mohammad/Downloads/7622202030987_bounding_box.csv"
 
+![7622202030987_f306535d741c9148dc458acbbc887243_L_538](https://github.com/asreenmohammad/Asreen/assets/169051643/689e51ef-4712-4157-a79f-0ad043f47acc)
+
 image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
 output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
 ## Creating Output Directory:
