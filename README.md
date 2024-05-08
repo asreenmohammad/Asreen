@@ -32,15 +32,6 @@ csv_file = "/home/asreen-mohammad/Downloads/7622202030987_bounding_box.csv"
 
 ![7622202030987_f306535d741c9148dc458acbbc887243_L_538](https://github.com/asreenmohammad/Asreen/assets/169051643/689e51ef-4712-4157-a79f-0ad043f47acc)
 
-image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
-
-output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
-
-
-![full_7622202030987_f306535d741c9148dc458acbbc887243_L_495](https://github.com/asreenmohammad/Asreen/assets/169051643/04586b56-c529-4f54-bbad-9176bc5510ac)
-
-
-![0_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/asreenmohammad/Asreen/assets/169051643/31516d5d-cb5f-43f2-a0b1-52e080d5c98f)
 
 ## Creating Output Directory:
 os.makedirs(output_dir, exist_ok=True)
@@ -62,6 +53,19 @@ cropped_images = crop_image(image, boxes)
             cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
         full_image_with_boxes = draw_boxes(image, boxes)
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
+
+image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
+
+
+output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
+
+
+
+![full_7622202030987_f306535d741c9148dc458acbbc887243_L_495](https://github.com/asreenmohammad/Asreen/assets/169051643/04586b56-c529-4f54-bbad-9176bc5510ac)
+
+
+
+![0_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/asreenmohammad/Asreen/assets/169051643/31516d5d-cb5f-43f2-a0b1-52e080d5c98f)
 
 
       
