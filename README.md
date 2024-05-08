@@ -89,7 +89,16 @@ previousNum = i
     This line updates the value of previousNum to the current number i for the next iteration of the loop.
     However, there's an issue with this code. It's incorrectly updating previousNum with the current value of i in each iteration, effectively resetting it to the current number rather than accumulating the sum. To fix this and correctly calculate the running sum, you should add i to previousNum in each iteration:
 output
-/home/asreen-mohammad/Documents/rough.py
+Current Number 0Previous Number 0is 0
+Current Number 1Previous Number 0is 1
+Current Number 2Previous Number 1is 3
+Current Number 3Previous Number 2is 5
+Current Number 4Previous Number 3is 7
+Current Number 5Previous Number 4is 9
+Current Number 6Previous Number 5is 11
+Current Number 7Previous Number 6is 13
+Current Number 8Previous Number 7is 15
+Current Number 9Previous Number 8is 17
 
 
 
