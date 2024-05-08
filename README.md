@@ -16,7 +16,7 @@ histr = cv2.calcHist([img],[0],None,[256],[0,256])
 plt.plot(histr) 
 plt.show()
 
-![doraemon](https://github.com/asreenmohammad/Asreen/assets/169051643/0dc799b1-e6d4-41f1-9619-a658c8c2c21a)
+
 
     
 
