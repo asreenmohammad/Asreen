@@ -42,12 +42,6 @@ output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
 
 ![0_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/asreenmohammad/Asreen/assets/169051643/31516d5d-cb5f-43f2-a0b1-52e080d5c98f)
 
-
-
-
-
-
-
 ## Creating Output Directory:
 os.makedirs(output_dir, exist_ok=True)
 ## Helper Functions:
