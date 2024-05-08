@@ -6,13 +6,7 @@ from matplotlib import pyplot as plt
 ## Reading the Input Image:
 img = cv2.imread('/home/asreen-mohammad/Downloads/doo.jpeg',0)
 
-
-
-
-
-
-
-
+![doo](https://github.com/asreenmohammad/Asreen/assets/169051643/d62a9c59-3648-487c-bf1d-3943251eb869)
 
 ## Saving the Image:
 cv2.imwrite('/home/asreen-mohammad/Downloads/scripts/doraemon.jpeg', img)
