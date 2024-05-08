@@ -49,6 +49,9 @@ image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
 
 output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
 
+![full_7622202030987_f306535d741c9148dc458acbbc887243_L_495](https://github.com/asreenmohammad/Asreen/assets/169051643/04586b56-c529-4f54-bbad-9176bc5510ac)
+
+
 
 
 
