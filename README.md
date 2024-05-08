@@ -16,6 +16,8 @@ histr = cv2.calcHist([img],[0],None,[256],[0,256])
 plt.plot(histr) 
 plt.show()
 
+![aashi](https://github.com/asreenmohammad/Asreen/assets/169051643/9f7c9f34-cedf-4f5e-9ac9-7434e1daf085)
+
 
 
     
