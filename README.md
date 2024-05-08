@@ -71,15 +71,24 @@ def crop_image(image, boxes):
     return cropped_images
 ```
     
-## rough
-```
+
+This code calculates the running sum of numbers in the num list and prints each step of the calculation along with the current number, the previous number, and their sum.
+## Initializing Variables:
 num = list(range(10))
 previousNum = 0
+## Looping Through the Numbers:
 for i in num:
-    sum = previousNum + i
-    print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum))
-    previousNum=i
-```
+## Calculating the Running Sum:
+sum = previousNum + i
+## Printing the Results:
+print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum))
+## Updating the Previous Sum:
+previousNum = i
+    This line updates the value of previousNum to the current number i for the next iteration of the loop.
+    However, there's an issue with this code. It's incorrectly updating previousNum with the current value of i in each iteration, effectively resetting it to the current number rather than accumulating the sum. To fix this and correctly calculate the running sum, you should add i to previousNum in each iteration:
+
+
+
 
 
 ## video
