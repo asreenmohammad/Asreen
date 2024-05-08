@@ -42,7 +42,26 @@ from PIL import Image, ImageDraw
 csv_file = "/home/asreen-mohammad/Downloads/7622202030987_bounding_box.csv"
 image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
 output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
-
+## Creating Output Directory:
+os.makedirs(output_dir, exist_ok=True)
+## Helper Functions:
+    draw_boxes(image, boxes): This function draws bounding boxes on the input image.
+    crop_image(image, boxes): This function crops the input image based on the bounding box coordinates and returns a list of cropped images.
+## Reading and Processing CSV File:
+with open(csv_file, 'r') as file:
+    csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        image_name = row['filename']
+        image_path = os.path.join(image_dir, image_name)
+        output_path = os.path.join(output_dir, image_name)
+        image = Image.open(image_path)
+        boxes = [{'left': row['xmin'], 'top': row['ymin'], 'right': row['xmax'], 'bottom': row['ymax']}]
+## Processing Images:
+cropped_images = crop_image(image, boxes)
+        for i, cropped_img in enumerate(cropped_images):
+            cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
+        full_image_with_boxes = draw_boxes(image, boxes)
+        full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
 
 
       
