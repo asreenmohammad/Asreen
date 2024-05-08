@@ -73,6 +73,8 @@ def crop_image(image, boxes):
     
 
 This code calculates the running sum of numbers in the num list and prints each step of the calculation along with the current number, the previous number, and their sum.
+input
+
 ## Initializing Variables:
 num = list(range(10))
 previousNum = 0
@@ -86,7 +88,8 @@ print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' 
 previousNum = i
     This line updates the value of previousNum to the current number i for the next iteration of the loop.
     However, there's an issue with this code. It's incorrectly updating previousNum with the current value of i in each iteration, effectively resetting it to the current number rather than accumulating the sum. To fix this and correctly calculate the running sum, you should add i to previousNum in each iteration:
-
+output
+/home/asreen-mohammad/Documents/rough.py
 
 
 
