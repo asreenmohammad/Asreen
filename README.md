@@ -33,44 +33,22 @@ plt.show()
 
 
 ## carty
-```
-
+This code processes images and their associated bounding box information from a CSV file. Let's break down the code step by step
+## Imports
 import os
 import csv
 from PIL import Image, ImageDraw
-
-
+## Setting up File Paths:
 csv_file = "/home/asreen-mohammad/Downloads/7622202030987_bounding_box.csv"
 image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
 output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
 
 
-os.makedirs(output_dir, exist_ok=True)
 
+      
 
-def draw_boxes(image, boxes):
-    draw = ImageDraw.Draw(image)
-    for box in boxes:
-        left = int(box['left'])
-        top = int(box['top'])
-        right = int(box['right'])
-        bottom = int(box['bottom'])
-        draw.rectangle([left, top, right, bottom], outline="red")
-    return image
-
-
-def crop_image(image, boxes):
-    cropped_images = []
-    for box in boxes:
-        left = int(box['left'])
-        top = int(box['top'])
-        right = int(box['right'])
-        bottom = int(box['bottom'])
-        cropped_img = image.crop((left, top, right, bottom))
-        cropped_images.append(cropped_img)
-    return cropped_images
-```
     
+## rough
 
 This code calculates the running sum of numbers in the num list and prints each step of the calculation along with the current number, the previous number, and their sum.
 input
