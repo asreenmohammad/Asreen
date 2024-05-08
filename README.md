@@ -53,6 +53,8 @@ cropped_images = crop_image(image, boxes)
             cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
         full_image_with_boxes = draw_boxes(image, boxes)
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
+        
+## output
 
 image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
 
