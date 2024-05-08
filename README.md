@@ -40,6 +40,7 @@ import csv
 from PIL import Image, ImageDraw
 ## Setting up File Paths:
 csv_file = "/home/asreen-mohammad/Downloads/7622202030987_bounding_box.csv"
+
 image_dir = "/home/asreen-mohammad/Downloads/7622202030987/"
 output_dir = "/home/asreen-mohammad/Downloads/7622202030987_with_boxes"
 ## Creating Output Directory:
