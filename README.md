@@ -1,22 +1,39 @@
-## pic
-1. Install Fowolling packages
-   numpy, opencv, matplotlib
+This code is a Python script that utilizes the OpenCV (Open Source Computer Vision) library and Matplotlib to read an image, calculate the histogram of pixel intensities, and then plot the histogram.
 
-2. code
- ```bash
-# importing required libraries of opencv 
+## Importing Libraries:
 import cv2 
-  # importing library for plotting 
-from matplotlib import pyplot as plt 
-  # reads an input image 
-img = cv2.imread('/home/asreen-mohammad/Downloads/doo.jpeg',0) 
-cv2.imwrite('/home/asreen-mohammad/Downloads/scripts/doraemon.jpeg', img )
- # find frequency of pixels in range 0-255 
+from matplotlib import pyplot as plt
+## Reading the Input Image:
+img = cv2.imread('/home/asreen-mohammad/Downloads/doo.jpeg',0)
+
+
+
+
+
+
+
+
+
+## Saving the Image:
+cv2.imwrite('/home/asreen-mohammad/Downloads/scripts/doraemon.jpeg', img)
+## Calculating Histogram:
 histr = cv2.calcHist([img],[0],None,[256],[0,256]) 
-  # show the plotting graph of an image 
+## Plotting the Histogram:
 plt.plot(histr) 
-plt.show() 
-   ```
+plt.show()
+
+    
+
+
+
+
+
+
+
+
+
+
+
 ## carty
 ```
 
