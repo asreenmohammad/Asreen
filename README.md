@@ -48,20 +48,32 @@ csv_file = "/home/asreen-mohammad/Downloads/7622202030987_bounding_box.csv"
 ## Reading and Processing CSV File:
 
 with open(csv_file, 'r') as file:
+
     csv_reader = csv.DictReader(file)
+    
     for row in csv_reader:
+    
         image_name = row['filename']
+        
         image_path = os.path.join(image_dir, image_name)
+        
         output_path = os.path.join(output_dir, image_name)
+        
         image = Image.open(image_path)
+        
         boxes = [{'left': row['xmin'], 'top': row['ymin'], 'right': row['xmax'], 'bottom': row['ymax']}]
+        
         
 ## Processing Images:
 
 cropped_images = crop_image(image, boxes)
+
         for i, cropped_img in enumerate(cropped_images):
-            cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
+        
+            cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))
+            
         full_image_with_boxes = draw_boxes(image, boxes)
+        
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
         
 ## Creating Output Directory:
