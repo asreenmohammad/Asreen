@@ -1,4 +1,4 @@
-## Histogram
+## pic
 1. Install Fowolling packages
    numpy, opencv, matplotlib
 
