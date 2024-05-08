@@ -1,3 +1,5 @@
+## pic
+
 This code is a Python script that utilizes the OpenCV (Open Source Computer Vision) library and Matplotlib to read an image, calculate the histogram of pixel intensities, and then plot the histogram.
 
 ## Importing Libraries:
