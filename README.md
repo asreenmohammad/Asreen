@@ -152,27 +152,35 @@ Current Number 9Previous Number 8is 17
 
 ## VIDEO
 
-This code is a simple example of using OpenCV to capture video from a webcam and display it in a window.
+This Python code utilizes the OpenCV library to capture video from a camera device and save it to a file named "camera.avi". Let's break down the code step by step:
 
-## Importing OpenCV:
+## Import the OpenCV library:
 import cv2
-
-## Initializing Video Capture:
-vid = cv2.VideoCapture(0)
-
-## Capturing and Displaying Video:
+## Create a VideoCapture object to capture video from the camera:
+video = cv2.VideoCapture(0)
+## Check if the camera is opened successfully:
+if (video.isOpened() == False):
+    print("Error reading video file")
+## Get the frame width and height from the captured video:
+frame_width = int(video.get(3))
+frame_height = int(video.get(4))
+## Define the size of the frames:
+size = (frame_width, frame_height)
+## Create a VideoWriter object to write video frames to a file:
+result = cv2.VideoWriter('camera.avi', cv2.VideoWriter_fourcc(*'MJPG'), 10, size)
+## Enter a loop to continuously capture frames from the camera:
 while(True):
-    ret, frame = vid.read()
-    cv2.imshow('frame', frame)
-## Exiting the Loop:
-if cv2.waitKey(1) & 0xFF == ord('q'):
+    ret, frame = video.read()
+## If a frame is successfully captured:
+if cv2.waitKey(1) & 0xFF == ord('s'):
     break
-
-## Releasing the Video Capture Object:
-vid.release()
-
-## Closing OpenCV Windows:
+## Release the VideoCapture and VideoWriter objects after the loop ends:
+video.release()
+result.release()
+## Close all OpenCV windows:
 cv2.destroyAllWindows()
+## Print a success message:
+print("The video was successfully saved")
 
 ## output
 
