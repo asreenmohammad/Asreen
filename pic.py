@@ -1,17 +1,22 @@
+import numpy as np
+import cv2
+from matplotlib import pyplot as plt
+import argparse
 
-# importing required libraries of opencv 
-import cv2 
-  
-# importing library for plotting 
-from matplotlib import pyplot as plt 
-  
-# reads an input image 
-img = cv2.imread('/home/asreen-mohammad/Downloads/doo.jpeg',0) 
-cv2.imwrite('/home/asreen-mohammad/Downloads/scripts/doraemon.jpeg', img )
+parser = argparse.ArgumentParser()
+parser.add_argument('--image', help='enter the image path')
+parser.add_argument('--output', help='enter the output path')
+
+args = vars(parser.parse_args())
+image = cv2.imread(args['image'])
+
  
-# find frequency of pixels in range 0-255 
-histr = cv2.calcHist([img],[0],None,[256],[0,256]) 
-  
-# show the plotting graph of an image 
-plt.plot(histr) 
-plt.show() 
+#img = cv.imread('doo.jpeg')
+#cv.imwrite("/home/asreen-mohammad/Downloads/doraemon.jpeg",img)
+assert image is not None, "file could not be read, check with os.path.exists()"
+color = ('b','g','r')
+for i,col in enumerate(color):
+ histr = cv2.calcHist([image],[i],None,[256],[0,256])
+ plt.plot(histr,color = col)
+ plt.xlim([0,256])
+plt.show()
