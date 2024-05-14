@@ -13,8 +13,8 @@ video = cv2.VideoCapture(0)
 # is opened previously or not 
 if (video.isOpened() == False):  
     print("Error reading video file") 
-
-    # We need to set resolutions. 
+  
+# We need to set resolutions. 
 # so, convert them from float to integer. 
 frame_width = int(video.get(3)) 
 frame_height = int(video.get(4)) 
@@ -35,8 +35,8 @@ while(True):
         # Write the frame into the 
         # file 'filename.avi' 
         result.write(frame) 
-
-          # Display the frame 
+  
+        # Display the frame 
         # saved in the file 
         cv2.imshow('Frame', frame) 
   
@@ -59,4 +59,3 @@ result.release()
 cv2.destroyAllWindows() 
    
 print("The video was successfully saved", args.output)
-  
